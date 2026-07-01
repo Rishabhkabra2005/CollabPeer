@@ -31,11 +31,11 @@ const userSeed = [
     name: "Rishabh Kabra",
     email: "rishabh.kabra@dev.local",
     rollNo: "2201EC042",
-    program: "B.Tech Electronics and Communication Engineering",
+    program: "B.Tech Electronics and Electrical Engineering",
     year: "3",
-    branch: "Electronics and Communication Engineering",
+    branch: "Electronics and Electrical Engineering",
     description:
-      "Full-stack developer & analytics enthusiast. Built PeerPulse as a portfolio showcase for peer collaboration, ML moderation, and real-time chat.",
+      "Full-stack developer & analytics enthusiast. Built CollabPeer as a portfolio showcase for peer collaboration, ML moderation, and real-time chat.",
     profilePic: "",
     rating: 4.8,
     views: 128,
@@ -122,10 +122,10 @@ const projectSeed = [
     creatorIndex: 2,
   },
   {
-    title: "PeerPulse — Campus Collaboration Hub",
+    title: "CollabPeer — Campus Collaboration Hub",
     description:
       "This platform: peer feed, discussions, course reviews, Socket.IO chat, and Keras-based comment moderation.",
-    githubLink: "https://github.com/rishabhkabra/peerpulse",
+    githubLink: "https://github.com/rishabhkabra/collabpeer",
     rating: 4.9,
     mediaArray: ["https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800"],
     skillNames: ["React", "Node.js", "MongoDB", "TensorFlow", "Python"],
@@ -173,7 +173,7 @@ const courseSeed = [
   {
     title: "Digital Signal Processing",
     description:
-      "Fourier transforms, filter design, and MATLAB/Python implementations relevant to ECE students.",
+      "Fourier transforms, filter design, and MATLAB/Python implementations relevant to EEE students.",
     courseLink: "https://example.edu/courses/dsp",
     coursePic: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=800",
     skillNames: ["Python", "Analytics"],
@@ -223,7 +223,7 @@ const discussionSeed = [
 
 const postSeed = [
   {
-    caption: "Just shipped the PeerPulse ML moderation pipeline — hate/spam scores in under 2 seconds!",
+    caption: "Just shipped the CollabPeer ML moderation pipeline — hate/spam scores in under 2 seconds!",
     creatorIndex: 0,
     skillNames: ["Python", "TensorFlow", "Node.js"],
   },
@@ -244,7 +244,7 @@ const chatThreads = [
     fromIndex: 0,
     toIndex: 1,
     messages: [
-      { fromIndex: 1, text: "Hey Rishabh! Saw your PeerPulse demo — the ML filter is slick." },
+      { fromIndex: 1, text: "Hey Rishabh! Saw your CollabPeer demo — the ML filter is slick." },
       { fromIndex: 0, text: "Thanks Rohan! Used Keras models with a Python subprocess from Express." },
       { fromIndex: 1, text: "Nice. Want to collab on the analytics dashboard next week?" },
       { fromIndex: 0, text: "Absolutely — let's sync after Thursday's lab." },
@@ -281,7 +281,7 @@ const chatThreads = [
     fromIndex: 0,
     toIndex: 4,
     messages: [
-      { fromIndex: 0, text: "Sneha, loved your landing page mockups for PeerPulse!" },
+      { fromIndex: 0, text: "Sneha, loved your landing page mockups for CollabPeer!" },
       { fromIndex: 4, text: "Glad they helped! The purple accent really pops on mobile." },
     ],
   },

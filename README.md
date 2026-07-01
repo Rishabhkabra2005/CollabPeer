@@ -1,6 +1,6 @@
-# PeerPulse
+# CollabPeer
 
-**PeerPulse** is a full-stack peer collaboration platform built as a personal portfolio project by **Rishabh Kabra** — an Electronics and Communication Engineering student specializing in full-stack web development and analytics.
+**CollabPeer** is a full-stack peer collaboration platform built as a personal portfolio project by **Rishabh Kabra** — an Electronics and Electrical Engineering student specializing in full-stack web development and analytics.
 
 ## Features
 
@@ -65,4 +65,4 @@ Open **http://localhost:8080** — React UI and Express API run together.
 
 ## Author
 
-**Rishabh Kabra** — ECE | Full-Stack Web Development & Analytics
+**Rishabh Kabra** — EEE | Full-Stack Web Development & Analytics

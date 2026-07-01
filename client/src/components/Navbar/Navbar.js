@@ -55,7 +55,7 @@ function Navbar() {
       onMouseLeave={handleLeave}
     >
       <div className="pt-[2vh] text-center hidden md:block text-2xl font-bold">
-        PeerPulse
+        CollabPeer
       </div>
       <div className="w-full">
         <div className="md:pt-[10vh] px-10 md:px-0 py-[2vh] items-center align-center text-xl text-[#424242] flex md:justify-normal justify-between md:flex-col">

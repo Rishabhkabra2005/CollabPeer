@@ -13,7 +13,7 @@ function ProfilePageComp(props) {
 
   return (
     <div className="bg-[#F8F8F8] h-full">
-      <ProfilePageTopBar title={"PeerPulse"}/>
+      <ProfilePageTopBar title={"CollabPeer"}/>
       <ProfileNavBar />
       <HeaderImg />
       <ProfileCard user={user} setIsEdit={setIsEdit}/>

@@ -56,9 +56,9 @@ router.get("/dev-signin", async function (req, res) {
         username: "Rishabh Kabra",
         email: devEmail,
         rollNo: "DEV001",
-        program: "Electronics and Communication Engineering",
+        program: "Electronics and Electrical Engineering",
         year: "3",
-        branch: "Electronics and Communication Engineering",
+        branch: "Electronics and Electrical Engineering",
       });
       await existingUser.save();
     }

@@ -78,7 +78,7 @@ export default function Contacts({ contacts, currentUser, changeChat, isGroup })
             <div className='h-[100vh] flex flex-col justify-between items-center'>
               <div className='w-full h-[90vh] flex flex-col'>
                 <div className="brand">
-                  <div className='title'>PeerPulse</div>
+                  <div className='title'>CollabPeer</div>
                 </div>
                 <div className="contacts">
                   {

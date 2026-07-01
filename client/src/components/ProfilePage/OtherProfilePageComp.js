@@ -11,7 +11,7 @@ function OtherProfilePageComp(props) {
 
   return (
     <div className="bg-[#F8F8F8] h-full">
-      <ProfilePageTopBar title={"PeerPulse"}/>
+      <ProfilePageTopBar title={"CollabPeer"}/>
       <ProfileNavBar other={true} />
       <HeaderImg />
       <OtherUsersProfileCard user={user} />

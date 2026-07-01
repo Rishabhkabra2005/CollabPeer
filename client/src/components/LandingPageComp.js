@@ -203,10 +203,10 @@ const LandingPageComp = () => {
       </FullpageSection>
       <FullpageSection isAutoHeight>
         <footer className="bg-[#D4D7F9] w-full flex-col gap-2 text-white text-[20px] font-[700] h-[15vh] flex justify-center items-center">
-          <div>PeerPulse — Portfolio Project</div>
+          <div>CollabPeer — Portfolio Project</div>
           <div>Built by Rishabh Kabra</div>
           <div className="text-[14px] font-[500]">
-            Electronics &amp; Communication Engineering | Full-Stack &amp; Analytics
+            Electronics &amp; Electrical Engineering | Full-Stack &amp; Analytics
           </div>
         </footer>
       </FullpageSection>
