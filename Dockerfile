@@ -6,9 +6,12 @@ RUN apt-get update && apt-get install -y python3 python3-pip
 
 WORKDIR /app
 
-# 3. Copy root package structures and install Node.js modules
+# 3. Copy package structures and install dependencies for BOTH root and server layers
 COPY package*.json ./
 RUN npm install
+
+COPY server/package*.json ./server/
+RUN cd server && npm install
 
 # 4. Copy the rest of the workspace source files
 COPY . .
