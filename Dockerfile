@@ -1,25 +1,32 @@
-# 1. Base the cloud environment on Node.js
+# 1. Base image containing Node.js
 FROM node:20
 
-# 2. Automatically install Python 3.12 and pip packages onto the Linux container
+# 2. Install Python 3.12 for ML pipeline execution
 RUN apt-get update && apt-get install -y python3 python3-pip
 
 WORKDIR /app
 
-# 3. Copy package structures and install dependencies for BOTH root and server layers
+# 3. Copy root and server dependencies
 COPY package*.json ./
 RUN npm install
 
 COPY server/package*.json ./server/
 RUN cd server && npm install
 
-# 4. Copy the rest of the workspace source files
+# 4. Copy client structures and install React modules
+COPY client/package*.json ./client/
+RUN cd client && npm install
+
+# 5. Copy the entire project repository source code
 COPY . .
 
-# 5. Install Python ML requirements inside the container
+# 6. Compile the React production build folder layout inside the container
+RUN cd client && npm run build
+
+# 7. Install Python ML pipeline requirements
 RUN pip3 install --break-system-packages numpy nltk tensorflow setuptools==69.5.1
 
 EXPOSE 8080
 
-# 6. Fire up your production server sequence
+# 8. Run the production deployment backend instance
 CMD ["npm", "run", "start:prod"]
