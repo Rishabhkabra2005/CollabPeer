@@ -1,0 +1,11 @@
+{
+  "name": "peerpulse",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:client": "npm run build --prefix client",
+    "seed": "node server/seed.js",
+    "start:prod": "node server/app.js",
+    "build-and-start": "npm run build:client && npm run start:prod"
+  }
+}
